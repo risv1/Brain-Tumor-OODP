@@ -6,7 +6,7 @@ using namespace cv;
 
 int main() {
     // Load input image
-    Mat image = imread("C:/Users/Rishi/OneDrive/Pictures/images.png");
+    Mat image = imread("C:/Users/Rishi/OneDrive/Pictures/images.png"); // Change your filepath after downloading the original_image.png file
 
     // Resize image to a smaller size
     Size newSize(640, 480);
