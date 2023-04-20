@@ -28,7 +28,7 @@ int main() {
     obj2.inputtwo();
     int c=obj1.a, d=obj1.b, p=obj2.e, q=obj2.f, r=obj2.g;
     // Load input image
-    Mat image = imread("brain.png");
+    Mat image = imread("C:/Users/Rishi/OneDrive/Pictures/brain.png");
 
     // Resize image to a smaller size
     Size newSize(640, 590);
@@ -86,5 +86,13 @@ int main() {
     imshow("Output", output);
     waitKey(0);
 
+    string originalFileName = "original.png";
+    imwrite(originalFileName, image);
+
+    string thresholdedFileName = "thresholded.png";
+    imwrite(thresholdedFileName, thresholded);
+
+    string outputFileName = "output.png";
+    imwrite(outputFileName, output);
     return 0;
 }
