@@ -22,7 +22,7 @@ def main():
     c, d, p, q, r = obj1.a, obj1.b, obj2.e, obj2.f, obj2.g
     
     # Load input image
-    image = cv2.imread("C:/Users/Rishi/OneDrive/Pictures/brain.png")
+    image = cv2.imread("brain.png")
     
     # Resize image
     newSize = (c, d)
