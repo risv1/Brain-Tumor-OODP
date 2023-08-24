@@ -5,12 +5,12 @@ import numpy as np
 
 class InputSize:
     def input_one(self):
-        print("Input image size:")
+        print("Input image size: (recommended 640 by 590)")
         self.a, self.b = map(int, input().split())
         print("Updated Image size")
 
     def input_two(self):
-        print("Input Pixel colors for contrast:")
+        print("Input Pixel colors for contrast: (recommended 255,255,255)")
         self.e, self.f, self.g = map(int, input().split())
         print("Updated pixel colors")
 
